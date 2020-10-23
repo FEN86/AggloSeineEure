@@ -8,25 +8,10 @@ lazySizesConfig.hFac = 0.4;
 lazySizes.init();
 
 // jQuery Accordion plugin
-$(function () {
-    // media query event handler
-    if (matchMedia) {
-        const mq = window.matchMedia("(min-width: 1025px)");
-        mq.addListener(WidthChange);
-        WidthChange(mq);
-
-        // media query change
-        function WidthChange(mq) {
-            if (mq.matches) {
-                $('#menu').trigger('destroy');
-            } else {
-                // Accordion
-                $('#menu').slideAccordion();
-            }
-
-        }
-    }
-});
+// $(function () {
+//     // Accordion
+//     $('#menu').slideAccordion();
+// });
 
 ;(function ($) {
     $.fn.slideAccordion = function (opt) {

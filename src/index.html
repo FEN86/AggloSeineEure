@@ -8,11 +8,11 @@
     <title>Communauté d'agglomération Seine-Eure: Collectivité territoriale - Agglo Seine-Eure</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo/lab-tube-leaves_icon-icons.com_56345.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="wrapper index-page">
+        <a href="#" class="one-click-toggle">Mes démarches en ligne</a>
         <header class="site-header header">
             <div class="container-lg">
                 <div class="header__inner">
@@ -43,7 +43,7 @@
                             <li class="social-networks__item"><a href="#" class="social-networks__link icon-instagram" title="Accéder au compte Instagram"><span class="visually-hidden">Instagram</span></a></li>
                             <li class="social-networks__item"><a href="#" class="social-networks__link icon-linkedin" title="Accéder au compte LinkedIn"><span class="visually-hidden">LinkedIn</span></a></li>
                         </ul>
-                        <button class="menu-btn" type="button" aria-expanded="false" aria-label="toggle button menu" aria-controls="menu">
+                        <button class="menu-btn" type="button" aria-label="open button menu" aria-controls="navigation">
                             <span class="menu-btn__line menu-btn__line--top"></span>
                             <span class="menu-btn__line menu-btn__line--middle"></span>
                             <span class="menu-btn__line menu-btn__line--bottom"></span>
@@ -51,9 +51,541 @@
                     </div>
                 </div>
             </div>
+            <nav class="navigation" id="navigation">
+                <button class="close-menu-btn close-menu-btn--margin icon-close" type="button" aria-controls="navigation" aria-label="close button menu">
+                    <span class="visually-hidden">Fermer</span>
+                </button>
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">L'Agglomération</a>
+                        <button class="menu__toggle-btn icon-angle-down js-opener" type="button" aria-controls="submenu--lvl1-id-001">
+                            <span class="visually-hidden">Lorem ipsum</span>
+                        </button>
+                        <ul class="submenu submenu--lvl1 js-slide" id="submenu--lvl1-id-001">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Les modes de garde</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-001">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-001">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">S'installer en Seine-Eure</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-002">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-002">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se déplacer</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-003">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-003">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se loger</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-004">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-004">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Découvrir</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-005">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-005">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Préserver l'environnement</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-006">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-006">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Etre solidaire</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-007">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-007">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Valoriser le patrimoine</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-001-008">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-001-008">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Au quotidien</a>
+                        <button class="menu__toggle-btn icon-angle-down js-opener" type="button" aria-controls="submenu--lvl1-id-002">
+                            <span class="visually-hidden">Lorem ipsum</span>
+                        </button>
+                        <ul class="submenu submenu--lvl1 js-slide" id="submenu--lvl1-id-002">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Les modes de garde</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-001">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-001">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">S'installer en Seine-Eure</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-002">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-002">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se déplacer</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-003">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-003">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se loger</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-004">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-004">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Découvrir</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-005">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-005">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Préserver l'environnement</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-006">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-006">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Etre solidaire</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-007">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-007">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Valoriser le patrimoine</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-002-008">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-002-008">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Territoire d'avenir</a>
+                        <button class="menu__toggle-btn icon-angle-down js-opener" type="button" aria-controls="submenu--lvl1-id-003">
+                            <span class="visually-hidden">Lorem ipsum</span>
+                        </button>
+                        <ul class="submenu submenu--lvl1 js-slide" id="submenu--lvl1-id-003">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Les modes de garde</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-001">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-001">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">S'installer en Seine-Eure</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-002">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-002">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se déplacer</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-003">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-003">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se loger</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-004">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-004">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Découvrir</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-005">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-005">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Préserver l'environnement</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-006">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-006">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Etre solidaire</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-007">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-007">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Valoriser le patrimoine</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-003-008">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-003-008">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Grands projets</a>
+                        <button class="menu__toggle-btn icon-angle-down js-opener" type="button" aria-controls="submenu--lvl1-id-004">
+                            <span class="visually-hidden">Lorem ipsum</span>
+                        </button>
+                        <ul class="submenu submenu--lvl1 js-slide" id="submenu--lvl1-id-004">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Les modes de garde</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-001">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-001">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">S'installer en Seine-Eure</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-002">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-002">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se déplacer</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-003">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-003">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Se loger</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-004">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-004">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Découvrir</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-005">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-005">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Préserver l'environnement</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-006">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-006">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Etre solidaire</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-007">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-007">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Valoriser le patrimoine</a>
+                                <button class="menu__toggle-btn icon-caret-down js-opener" type="button" aria-controls="submenu--lvl2-id-004-008">
+                                    <span class="visually-hidden">Lorem ipsum</span>
+                                </button>
+                                <ul class="submenu submenu--lvl2 js-slide" id="submenu--lvl2-id-004-008">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Arsène, votre concierge</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accueil personnalisé</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Votre vie en Seine-Eure</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Un accompagnement personnalisé pour trouver un logement</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Trouver un emploi pour mon conjoint</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Etudier en Seine-Eure</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main class="site-main main">
-            <section class="hero"></section>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+
+                    </div>
+                </div>
+                <div class="banner">
+                    <picture>
+                        <source data-srcset="images/banner_002.webp" type="image/avif">
+                        <source data-srcset="images/banner_002.webp" type="image/webp">
+                        <img class="banner__img lazyload" data-src="images/banner_002.img" alt="Hero image alt">
+                    </picture>
+                    <!--<picture>
+                        <source data-srcset="images/banner.webp" type="image/avif">
+                        <source data-srcset="images/banner.webp" type="image/webp">
+                        <img class="banner__img lazyload" data-src="images/banner.img" alt="Hero image alt">
+                    </picture>-->
+                </div>
+            </section>
+            <section class="quicklinks-block">
+                <div class="title-block">
+                    <h2 class="title"></h2>
+                    <svg version="1.1" id="layer_home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 262.5 50.6" style="enable-background:new 0 0 262.5 50.6;" xml:space="preserve">
+                                <g>
+                                    <defs>
+                                        <rect id="SVGID_home_1" y="0" width="262.5" height="50.6"></rect>
+                                    </defs>
+                                    <clipPath id="SVGID_home_2">
+                                        <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+                                    </clipPath>
+                                    <path class="st0" d="M262.5,50.6c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.2-5.7c-8.2,0-11.4,2-17.2,5.7
+                                        c-7.3,4.7-17.3,11.1-35.4,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7c-8.2,0-11.3,2-17.1,5.7
+                                        c-7.3,4.7-17.3,11.1-35.3,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7V0c18.1,0,28.1,6.4,35.4,11.1
+                                        c5.8,3.7,9,5.7,17.1,5.7c8.2,0,11.3-2,17.1-5.7C76.9,6.4,86.9,0,104.9,0C123,0,133,6.4,140.3,11.1c5.8,3.7,9,5.7,17.1,5.7
+                                        c8.2,0,11.4-2,17.2-5.7c7.3-4.7,17.3-11,35.4-11C228,0,238,6.4,245.3,11c5.8,3.7,9,5.7,17.2,5.7V50.6z"></path>
+                                </g>
+                            </svg>
+                </div>
+                <div class="quicklinks-block__container">
+                    <button class="quicklinks-block__control quicklinks-block__control--prev" type="button"></button>
+                    <button class="quicklinks-block__control quicklinks-block__control--next" type="button"></button>
+                    <div class="quicklinks-block__carousel">
+
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="site-footer footer">
 

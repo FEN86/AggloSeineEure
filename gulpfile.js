@@ -14,6 +14,8 @@ let ttf2woff = require('gulp-ttf2woff');
 let ttf2woff2 = require('gulp-ttf2woff2');
 let fonter = require('gulp-fonter');
 let concat = require('gulp-concat');
+let iconfontCss = require('gulp-iconfont-css');
+let iconfont = require('gulp-iconfont');
 
 let project_folder = 'dist';
 let source_folder = 'src';
@@ -105,7 +107,7 @@ function otf2ttf() {
 
 // create SVG Sprite
 function svgSprite() {
-    return gulp.src([source_folder + '/iconsprite/!*.svg'])
+    return gulp.src([source_folder + '/iconsprite/*.svg'])
         .pipe(svgsprite({
             mode: {
                 stack: {

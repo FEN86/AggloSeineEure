@@ -363,6 +363,8 @@ body {
   line-height: 1.5;
   color: #fff;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.js-lock {
@@ -877,8 +879,6 @@ img.lazyload:not([src]) {
 
 .hero {
   position: relative;
-  background: #212851;
-  min-height: calc(100vh - 120px);
 }
 
 .hero::before,
@@ -916,15 +916,45 @@ img.lazyload:not([src]) {
 /* banner */
 
 .banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  position: relative;
+  /*&::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $foreground;
+    mix-blend-mode: color;
+    z-index: 1;
+  }*/
 }
 
-.banner::before {
+.banner::after {
+  content: '';
+  position: absolute;
+  bottom: -61px;
+  left: 0;
+  width: 231px;
+  height: 386px;
+  background: url("../images/decor/decor-zig-zag-color.png") no-repeat;
+  z-index: 3;
+}
+
+.banner--static-height {
+  height: 934px;
+}
+
+.banner__picture {
+  display: block;
+  position: relative;
+  background-color: #212851;
+  height: 100%;
+}
+
+.banner__picture::before {
   content: '';
   position: absolute;
   right: 0;
@@ -934,7 +964,7 @@ img.lazyload:not([src]) {
   width: 100%;
   height: 100%;
   background-color: #79c7c3;
-  mix-blend-mode: color;
+  mix-blend-mode: multiply;
   z-index: 1;
 }
 
@@ -949,10 +979,13 @@ img.lazyload:not([src]) {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
-  font-family: 'object-fit: cover; object-position: center top;';
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
   background-position: center;
+  -webkit-filter: grayscale(100%) contrast(1) blur(0);
+          filter: grayscale(100%) contrast(1) blur(0);
+  mix-blend-mode: screen;
 }
 
 /* footer */
@@ -1463,13 +1496,14 @@ img.lazyload:not([src]) {
 
   .one-click-toggle::before {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .one-click-toggle span {
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    width: 100%;
   }
 
   .one-click-toggle:hover {

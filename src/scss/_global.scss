@@ -654,13 +654,26 @@ img.lazyload:not([src]) {
 
 /* site-infos */
 .site-infos {
-  padding: 50px 0 60px;
+  padding: 50px 0 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 767px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 28px 60px;
+  }
 }
 .site-infos__img {
   margin: 0 0 40px;
+  @media (min-width: 767px) {
+    margin: 0 55px 55px 0;
+  }
+}
+.site-infos__address {
+  margin: 0 0 55px;
 }
 .site-infos__social {
   display: flex;
@@ -670,27 +683,41 @@ img.lazyload:not([src]) {
   .social-networks {
     display: flex;
   }
+  @media (min-width: 767px) {
+    margin: 0 50px 55px 0;
+  }
 }
 .site-infos__links {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 20px;
+  @media (min-width: 767px) {
+    align-items: flex-start;
+  }
 }
 
 /* address */
 .address {
   font-style: normal;
-  margin: 0 0 55px;
+  @media (min-width: 767px) {
+    display: flex;
+  }
 }
 .address__location {
   max-width: 242px;
   margin: 0 0 25px;
+  @media (min-width: 767px) {
+    margin: 0 10px 0 0;
+  }
 }
 .address__location-title, .address__location-desc {
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: 767px) {
+    text-align: left;
+  }
 }
 .address__location-title {
   font-weight: 700;
@@ -701,6 +728,9 @@ img.lazyload:not([src]) {
 .address__hours {
   max-width: 210px;
   margin: 0 auto;
+  @media (min-width: 767px) {
+    margin: 0 30px 0 0;
+  }
 }
 .address__hours-title {
   font-size: 13px;
@@ -711,6 +741,16 @@ img.lazyload:not([src]) {
   font-size: 13px;
   display: flex;
   justify-content: space-between;
+  @media (min-width: 1200px) {
+    flex-direction: column;
+  }
+}
+.address__hours-col {
+  @media (max-width: 1199px) {
+    &:not(:first-child) {
+      margin: 0 0 0 30px;
+    }
+  }
 }
 
 /* link */
@@ -720,7 +760,7 @@ img.lazyload:not([src]) {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 6px 15px 0 54px;
+  padding: 6px 15px 6px 54px;
   &::before {
     content: '';
     display: block;
@@ -754,7 +794,7 @@ img.lazyload:not([src]) {
 
 /* btn */
 .btn {
-  display: inline-block;
+  display: block;
   position: relative;
   font-size: 15px;
   font-weight: 700;
@@ -764,6 +804,9 @@ img.lazyload:not([src]) {
   border: 1px solid $accent;
   background-color: $base;
   transition: color .2s, background-color .2s;
+  @media (min-width: 1023px) {
+    font-size: 16px;
+  }
   &::before {
     content: '\e925';
     position: absolute;
@@ -777,19 +820,42 @@ img.lazyload:not([src]) {
     background-color: $accent;
     color: $base;
   }
+  &:not(:first-child) {
+    margin: 20px 0 0;
+  }
 }
 
 /* menu-cross */
+.menu-cross {
+  @media (min-width: 767px) {
+    display: flex;
+  }
+}
+.menu-cross__btn {
+  margin: 0 0 45px;
+  @media (min-width: 767px) {
+    margin: 8px 30px 0 0;
+  }
+}
+.menu-cross__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px;
+  @media (min-width: 767px) {
+    margin: 0;
+  }
+}
 .menu-cross__link {
   position: relative;
   font-size: 15px;
   text-transform: uppercase;
-  padding: 0 14px;
+  padding: 0 10px 0 16px;
   &::before {
     content: '\e925';
     position: absolute;
     top: 0;
-    left: 3px;
+    left: 5px;
     color: $foreground;
     font-family: icomoon;
   }

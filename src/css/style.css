@@ -1556,13 +1556,6 @@ img.lazyload:not([src]) {
   background: linear-gradient(to bottom, rgba(33, 40, 81, 0) 0, rgba(33, 40, 81, 0.09) 14%, rgba(33, 40, 81, 0.17) 23%, rgba(33, 40, 81, 0.66) 69%, rgba(33, 40, 81, 0.78) 81%, rgba(33, 40, 81, 0.91) 100%);
 }
 
-/* title-block */
-
-.title-block svg {
-  width: 45px;
-  max-height: 9px;
-}
-
 /* banner */
 
 .banner {
@@ -1572,16 +1565,16 @@ img.lazyload:not([src]) {
 .banner::after {
   content: '';
   position: absolute;
-  bottom: -61px;
+  bottom: 80px;
   left: 0;
-  width: 231px;
-  height: 386px;
-  background: url("../images/decor/decor-zig-zag-color.png") no-repeat;
+  width: 75px;
+  height: 144px;
+  background: url("../images/decor/decor-zig-zag-color_mobile.png") no-repeat;
   z-index: 3;
 }
 
 .banner--static-height {
-  height: 934px;
+  height: 370px;
 }
 
 .banner__picture {
@@ -1918,6 +1911,8 @@ img.lazyload:not([src]) {
   position: relative;
   padding: 50px 0;
   overflow: hidden;
+  margin-top: -190px;
+  z-index: 3;
 }
 
 .quicklinks-block__item {
@@ -1925,7 +1920,6 @@ img.lazyload:not([src]) {
 }
 
 .quicklinks-block__link {
-  max-width: 120px;
   display: block;
   font-size: 13px;
   color: #575c5e;
@@ -1960,18 +1954,100 @@ img.lazyload:not([src]) {
   height: auto;
 }
 
-.quicklinks-block__carousel.swiper-container {
-  width: 1080px;
+.quicklinks-block__container {
+  position: relative;
+  width: 100%;
   height: auto;
+  padding: 0 24px;
 }
 
-.swiper-slide {
-  color: #000;
+.quicklinks-block__carousel.swiper-container {
+  width: 100%;
 }
 
-.swiper-container {
-  width: 600px;
-  height: 300px;
+.quicklinks-block__control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.quicklinks-block__control::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: icomoon;
+  color: #575c5e;
+}
+
+.quicklinks-block__control.-prev {
+  left: 3px;
+}
+
+.quicklinks-block__control.-prev::before {
+  content: '\e92b';
+}
+
+.quicklinks-block__control.-next {
+  right: 3px;
+}
+
+.quicklinks-block__control.-next::before {
+  content: '\e92a';
+}
+
+.js-swiper-control.swiper-button-disabled {
+  pointer-events: none;
+}
+
+.js-swiper-control.swiper-button-disabled::before {
+  color: #ecf0f3;
+}
+
+/* title-block */
+
+.title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-block svg {
+  width: 36px;
+  max-height: 7px;
+  margin-top: 5px;
+}
+
+.title {
+  font-size: 26px;
+  color: #212851;
+}
+
+.quicklinks-block .title {
+  color: #fff;
 }
 
 @media (min-width: 479px) {
@@ -2035,6 +2111,16 @@ img.lazyload:not([src]) {
   }
 }
 
+@media (min-width: 480px) {
+  .quicklinks-block__carousel.swiper-container {
+    width: calc(100% - 32px);
+  }
+
+  .quicklinks-block__carousel.swiper-container {
+    width: calc(100% - 74px);
+  }
+}
+
 @media (min-width: 630px) {
   .navigation {
     max-width: 630px;
@@ -2042,7 +2128,7 @@ img.lazyload:not([src]) {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   body {
     font-size: 18px;
   }
@@ -2087,6 +2173,17 @@ img.lazyload:not([src]) {
   .search-form__btn {
     font-size: 18px;
     width: 75px;
+  }
+
+  .banner::after {
+    bottom: -61px;
+    width: 186px;
+    height: 317px;
+    background: url("../images/decor/decor-zig-zag-color_tablet.png") no-repeat;
+  }
+
+  .banner--static-height {
+    height: 484px;
   }
 
   .footer-btn {
@@ -2155,9 +2252,42 @@ img.lazyload:not([src]) {
   .menu-cross__nav {
     margin: 0;
   }
+
+  .quicklinks-block {
+    margin-top: -213px;
+  }
+
+  .quicklinks-block__container {
+    padding: 0 53px 0 250px;
+  }
+
+  .quicklinks-block__carousel.swiper-container {
+    width: calc(100% - 32px);
+  }
+
+  .quicklinks-block__control.-prev {
+    left: 229px;
+  }
+
+  .quicklinks-block__control.-next {
+    right: 33px;
+  }
+
+  .title-block {
+    margin-bottom: 33px;
+  }
+
+  .title-block svg {
+    width: 41px;
+    max-height: 8px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .one-click-toggle {
     display: block;
     position: fixed;
@@ -2209,6 +2339,10 @@ img.lazyload:not([src]) {
     opacity: .8;
   }
 
+  .header {
+    padding-top: 55px;
+  }
+
   .social-networks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2254,14 +2388,39 @@ img.lazyload:not([src]) {
     font-size: 32px;
   }
 
+  .banner::after {
+    width: 231px;
+    height: 386px;
+    background: url("../images/decor/decor-zig-zag-color.png") no-repeat;
+  }
+
+  .banner--static-height {
+    height: 934px;
+  }
+
   .btn {
     font-size: 16px;
   }
-}
 
-@media (min-width: 1024px) {
-  .header {
-    padding-top: 55px;
+  .quicklinks-block__container {
+    padding: 0 86px 0 220px;
+  }
+
+  .quicklinks-block__control.-prev {
+    left: 198px;
+  }
+
+  .quicklinks-block__control.-next {
+    right: 64px;
+  }
+
+  .title-block svg {
+    width: 45px;
+    max-height: 9px;
+  }
+
+  .title {
+    font-size: 40px;
   }
 }
 
@@ -2271,6 +2430,26 @@ img.lazyload:not([src]) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (min-width: 1400px) {
+  .quicklinks-block__container {
+    padding: 0 86px 0 180px;
+  }
+
+  .quicklinks-block__control.-prev {
+    left: 158px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .quicklinks-block__container {
+    padding: 0 86px;
+  }
+
+  .quicklinks-block__control.-prev {
+    left: 64px;
   }
 }
 
